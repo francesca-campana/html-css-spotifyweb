@@ -4,42 +4,89 @@
   margin: 0;
   box-sizing: border-box;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: gray;
 }
+li {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+/* MAIN */
 .wrap {
   background-color: red;
   height: calc(100vh - 100px);
 }
 .main-top {
   height: 100px;
-  background-color: rgba(255, 0, 0, 0.5);
-  height: 100px;
-
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  top: 0;
+  width: 100%;
 }
+/* Main Left */
 .main-left {
   background-color: black;
-  height: 100%;
-  float:left;
-  width: 300px;
-}
-.main-right {
-  background-color: pink;
   height: calc(100vh - 100px);
   float:left;
-  width:calc(100% - 300px);
+  width: 250px;
+  padding-left: 20px;
+  
 
+}
+.installa-app {
+  height: 50px;
+  background-color: pink;
+  width: 250px;
+}
+.logo img {
+  width: 50%;
+}
+
+.crea i {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+
+}
+.playlist {
+  height: calc(100vh - 230px);
+  overflow-y: hidden;
+}
+.crea .crea-playlist {
+  display: inline-block;
+  line-height: 30px;
+  /* overflow-y: auto; */
+
+}
+/* .crea {
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+} */
+/* Fine Main Left */
+
+/* Main Right */
+.main-right {
+  /* background-color: black; */
+  height: calc(100vh - 100px);
+  float:left;
+  width: calc(100% - 250px);
+  overflow: auto;
 }
 .content {
   overflow: auto;
-  background-color: pink;
-  height: calc(100vh - 200px);
-  float:left;
+  background-color: #141922;
+  height: calc(100vh - 100px);
   width:100%;
 }
+/* Fine Main Right */
+/* FINE MAIN */
+
+/* FOOTER */
 .player {
-  background-color: darkgrey;
+  background-color: #282828;
   height: 100px;
 }
+/* FINE FOOTER */
