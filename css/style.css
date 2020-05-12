@@ -1,0 +1,33 @@
+/* Generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrap {
+  background-color: red;
+  height: calc(100vh - 100px);
+
+}
+.main-left {
+  background-color: black;
+  height: 100%;
+  float:left;
+  width:20%;
+}
+.main-right {
+  background-color: pink;
+  height: 100%;
+  float:left;
+  width:80%;
+  overflow: scroll;
+}
+.player {
+  background-color: darkgrey;
+  height: 100px;
+}
