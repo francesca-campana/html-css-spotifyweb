@@ -32,7 +32,7 @@ li {
   float:left;
   width: 250px;
   padding-left: 20px;
-  
+
 
 }
 .installa-app {
@@ -53,7 +53,7 @@ li {
 }
 .playlist {
   height: calc(100vh - 230px);
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 .crea .crea-playlist {
   display: inline-block;
