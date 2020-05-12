@@ -33,7 +33,7 @@
 
 }
 .content {
-  overflow: scroll;
+  overflow: auto;
   background-color: pink;
   height: calc(100vh - 200px);
   float:left;
