@@ -30,7 +30,14 @@
   height: calc(100vh - 100px);
   float:left;
   width:calc(100% - 300px);
+
+}
+.content {
   overflow: scroll;
+  background-color: pink;
+  height: calc(100vh - 200px);
+  float:left;
+  width:100%;
 }
 .player {
   background-color: darkgrey;
