@@ -12,6 +12,14 @@
 .wrap {
   background-color: red;
   height: calc(100vh - 100px);
+}
+.main-top {
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 
 }
 .main-left {
