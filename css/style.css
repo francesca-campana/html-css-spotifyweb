@@ -157,6 +157,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+/* Player Left */
 .player-left {
   background-color: red;
   display: flex;
@@ -171,11 +172,28 @@ main {
  justify-content: space-around;
 }
 .player-center {
-  background-color: yellow;
-
+  /* background-color: yellow; */
+  width: 40%;
 }
 .player-right {
   background-color: blue;
 
 }
+/* Fine Player Left */
+/* Player Center */
+.timeline {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+.time {
+  height: 4px;
+  border-radius: 8px;
+
+  background-color: lightgray;
+  width: 300px;
+}
+
+/* Fine Player Center */
 /* FINE FOOTER */
