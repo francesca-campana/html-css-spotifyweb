@@ -310,6 +310,7 @@ main .item {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 .einaudi .filter ,
 .youg .filter  {
@@ -320,13 +321,19 @@ main .item {
   justify-content: center;
   align-items: center;
   border-radius:50%;
+  visibility: hidden;
 }
-.album .filter .play i{
+.album .filter .play i {
   color: white;
   font-size: 50px;
+  display: none;
 }
-
-
+.album:hover .filter {
+visibility: visible;
+}
+.album:hover .play i {
+  display: block;
+}
 @media screen and (max-width: 479px) {
   .main-left {
     width: 50px;
