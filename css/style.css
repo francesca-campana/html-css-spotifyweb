@@ -275,6 +275,7 @@ main .item {
 .content-menu a:hover {
   color: white;
 }
+/* Album */
 .title {
   color: white;
   padding: 30px 0;
@@ -290,42 +291,27 @@ main .item {
   flex-wrap: wrap;
 
 }
-.album{
-  background-image: url(../img/metal_lifting.jpg);
-  background-size: cover;
+ .album {
   width: 200px;
-  height: 200px;
+  position: relative;
   margin-right: 10px;
   margin-bottom: 110px;
   text-align: center;
 }
-.album.stranger {
-  background-image: url(../img/stranger.jpeg);
+.contenitore img {
+    width: 200px;
+    display: block;
 }
-.album.quiet {
-  background-image: url(../img/aquietplace.jpeg);
+.contenitore {
+ position: relative;
 }
-.album.split {
-  background-image: url(../img/split.jpeg);
-}
-.album.cure {
-  background-image: url(../img/cure.jpeg);
-}
-.album.sinister {
-  background-image: url(../img/sinister.jpeg);
-}
-.album.release-radar {
-  background-image: url(../img/radar.jpeg);
-}
-.album.daily-mix {
-  background-image: url(../img/mixdaily.jpeg);
-}
-.album.youg{
-  background-image: url(../img/youg.jpeg);
+
+.youg .contenitore img{
+
   border-radius:50%;
 }
-.album.einaudi{
-  background-image: url(../img/einaudi.jpeg);
+.einaudi .contenitore img{
+
   border-radius:50%;
 }
 .subtitle {
@@ -340,15 +326,20 @@ main .item {
   color: gray;
   font-size: 12px;
 }
+
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   visibility: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
 }
+/*
 .einaudi .filter ,
 .youg .filter  {
   background-color: rgba(0, 0, 0, 0.5);
@@ -359,18 +350,23 @@ main .item {
   align-items: center;
   border-radius:50%;
   visibility: hidden;
-}
-.album .filter .play i {
+}*/
+.contenitore .filter .play i {
   color: white;
   font-size: 50px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50% , -50%);
   display: none;
 }
-.album:hover .filter {
+.contenitore:hover .filter {
 visibility: visible;
 }
-.album:hover .play i {
+.contenitore:hover .play i {
   display: block;
 }
+/* Fine Album */
 @media screen and (max-width: 479px) {
   .main-left {
     width: 50px;
@@ -479,11 +475,8 @@ footer .player-left a{
   width: 80px;
 }
 
-.line:hover {
-  height: 4px;
-  border-radius: 8px;
+.time:hover .line{
   background-color: #9bff00;
-  width: 80px;
 }
 
 .player-center .timeline .circle {
@@ -502,7 +495,7 @@ footer .player-left a{
 .player-right {
   display: flex;
   justify-content:flex-end;
-  width: 26%;
+  width: 21%;
 }
 .player-right .timeline .time {
   align-items: center;
@@ -571,8 +564,6 @@ footer .player-left a{
   .ico-timeline {
     width: 50%;
   }
-  /* .ico-timeline-right i {
-    font-size: 10px;
-  } */
+
 }
 /* FINE FOOTER */
