@@ -55,7 +55,15 @@ main {
   color: white;
   text-transform: uppercase;
   text-align: right;
+  margin-right: 10px;
+  transition: transform .2s; /* Animation */
 }
+.upgrade p:hover {
+  transform: scale(1.1);
+  right:0;
+
+}
+
 /* Fine Main Top */
 
 /* Main Left */
@@ -106,7 +114,17 @@ main {
   flex-shrink: 0;
   overflow: hidden;
 }
-
+/* hover main left */
+.nav-element li:hover {
+  color: white;
+}
+.nav-element a:hover {
+  color: white;
+}
+.crea:hover {
+  color:white;
+}
+/* fine hover main left */
 .crea i {
   display: inline-block;
   font-size: 40px;
@@ -250,6 +268,9 @@ main .item {
   font-size: 12px;
   font-weight: bold;
 }
+.content-menu a:hover {
+  color: white;
+}
 .title {
   color: white;
   padding: 30px 0;
@@ -271,7 +292,7 @@ main .item {
   width: 200px;
   height: 200px;
   margin-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 110px;
   text-align: center;
 }
 .album.stranger {
@@ -302,6 +323,18 @@ main .item {
 .album.einaudi{
   background-image: url(../img/einaudi.jpeg);
   border-radius:50%;
+}
+.subtitle {
+  padding-top: 20px;
+}
+.subtitle h3 {
+  color:white;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.subtitle p {
+  color: gray;
+  font-size: 12px;
 }
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
@@ -373,12 +406,19 @@ visibility: visible;
 .brano{
   padding-left: 10px;
 }
-footer .player-left p {
+footer .player-left a:hover {
+  text-decoration: underline;
+}
+footer .player-left a{
   font-size: 10px;
+
 }
 .brano p:first-child{
   color: white;
   font-size: 12px;
+}
+.player-left .item i:hover {
+  color:white;
 }
 /* Fine Player Left */
 
@@ -397,11 +437,15 @@ footer .player-left p {
   align-items: center;
   justify-content: center;
   width: 50%;
+  transition: transform .2s; /* Animation */
 }
 .ico-timeline i {
   padding-left: 30px;
   color: white;
   font-size: 18px;
+}
+.ico-timeline i.play:hover {
+  transform: scale(1.1);
 }
 .ico-timeline i.play {
   font-size: 28px;
@@ -430,11 +474,23 @@ footer .player-left p {
   background-color: lightgray;
   width: 80px;
 }
+
+.line:hover {
+  height: 4px;
+  border-radius: 8px;
+  background-color: #9bff00;
+  width: 80px;
+}
+
 .player-center .timeline .circle {
   width: 12px;
   height: 12px;
   background-color: white;
   border-radius: 50%;
+  display: none;
+}
+.time:hover .circle{
+  display: block;
 }
 /* Fine Player Center */
 
@@ -457,8 +513,11 @@ footer .player-left p {
   height: 12px;
   background-color: white;
   border-radius: 50%;
+  display: none;
 }
-
+.time:hover .circle{
+  display: block;
+}
 .ico-timeline-right {
   display: flex;
   align-items: center;
