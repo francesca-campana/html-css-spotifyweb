@@ -257,10 +257,11 @@ main .item {
 }
 .album {
   background-image: url(../img/metal_lifting.jpg);
+  background-size: cover;
   width: 200px;
   height: 200px;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-align: center;
 
 }
