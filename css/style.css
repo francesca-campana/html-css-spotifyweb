@@ -233,6 +233,7 @@ main .item {
   .users {
     padding: 0;
     justify-content: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -268,6 +269,9 @@ main .item {
   font-size: 12px;
   font-weight: bold;
 }
+/* .content-menu li:first-child  {
+  border-bottom: 2px solid green;
+} */
 .content-menu a:hover {
   color: white;
 }
@@ -396,7 +400,6 @@ visibility: visible;
 .player-left {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 230px;
 
 }
@@ -404,7 +407,8 @@ visibility: visible;
   width: 50px;
 }
 .brano{
-  padding-left: 10px;
+  padding: 0 10px;
+  flex-grow: 1;
 }
 footer .player-left a:hover {
   text-decoration: underline;
@@ -435,12 +439,12 @@ footer .player-left a{
 .ico-timeline {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 50%;
+  justify-content: space-around;
+  width: 30%;
   transition: transform .2s; /* Animation */
 }
 .ico-timeline i {
-  padding-left: 30px;
+  /* padding-left: 30px; */
   color: white;
   font-size: 18px;
 }
@@ -532,6 +536,9 @@ footer .player-left a{
   .player-center .time {
     width:230px;
   }
+  .ico-timeline {
+    width:35%;
+  }
 }
 @media screen and (max-width: 767px) {
   .player-center .time {
@@ -542,6 +549,9 @@ footer .player-left a{
   }
   .ico-timeline-right i {
     font-size: 12px;
+  }
+  .ico-timeline {
+    width: 50%;
   }
 }
 @media screen and (max-width: 479px) {
@@ -557,6 +567,9 @@ footer .player-left a{
   }
   .player-right .timeline .time {
     width: 50px;
+  }
+  .ico-timeline {
+    width: 50%;
   }
   /* .ico-timeline-right i {
     font-size: 10px;
