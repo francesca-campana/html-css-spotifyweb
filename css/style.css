@@ -251,9 +251,7 @@ main .item {
   background-color: #141922;
   height: 100%;
   width:100%;
-  padding-top: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 120px 20px 20px 20px;
 
 }
 .content .content-menu {
