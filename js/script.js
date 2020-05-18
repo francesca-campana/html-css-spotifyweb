@@ -1,1 +1,1 @@
-document.getElementById('my-user').innerHTML='franx3rox';
+document.getElementById('my-user').innerHTML = 'franx3rox';
